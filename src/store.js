@@ -1,10 +1,12 @@
 import { createStore, combineReducers } from 'redux';
 
 // import reducers here
-
+import goalReducer from 'reducers/goalReducer'
 // combine reducers
+
 const reducers = combineReducers({
-  // put reducers here
+	goalReducer
+  
 })
 
 // crerate the store
