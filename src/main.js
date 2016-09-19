@@ -9,8 +9,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-// Layout
-import ExampleLayout from 'layout/example';
 
 // UI
 import Home from 'ui/home/home';
@@ -18,9 +16,7 @@ import Home from 'ui/home/home';
 const Site = (
   <MuiThemeProvider>
     <Router history={browserHistory}>
-      <Route component={ExampleLayout}>
-        <Route path="/" component={Home} />
-      </Route>
+       <Route path="/" component={Home} />
     </Router>
   </MuiThemeProvider>
 );
